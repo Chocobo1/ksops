@@ -1,4 +1,5 @@
 # ksops
+
 A Kubernetes KMS provider with [mozilla/sops](https://github.com/mozilla/sops) as the backend
 
 ```
@@ -8,6 +9,8 @@ A Kubernetes KMS provider with [mozilla/sops](https://github.com/mozilla/sops) a
    │  kubectl   │ ◄───────────────── │         │ ◄───────────────── │            │
    └────────────┘                    └─────────┘                    └────────────┘
 ```
+
+[![GitHub Actions CI Status](https://github.com/Chocobo1/ksops/workflows/CI/badge.svg)](https://github.com/Chocobo1/ksops/actions)
 
 # Build
 

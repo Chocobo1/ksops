@@ -1,0 +1,14 @@
+name: CI
+on: [pull_request, push]
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout repository
+      uses: actions/checkout@v2
+    - name: setup golang
+      uses: actions/setup-go@v2
+    - name: build
+      run: go build ./cmd/ksops
+    - name: run
+      run: ./ksops -h
